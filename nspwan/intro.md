@@ -1,5 +1,7 @@
 This tutorial will describe how to create multiple isolated containers in Linux and run multiple Jenkins in them using Systemd-nspwan container technology.
 
+If you are want to try on your PC not here or your OS is not Linux. Please read the post in my blog > https://amao.run/en/posts/systemd-nspwan/
+
 ## Background
 
 This section will explain the terms that appear in this tutorial. This will help you to have a better understanding of this tutorial.

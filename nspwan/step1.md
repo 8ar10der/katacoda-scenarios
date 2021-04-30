@@ -1,3 +1,6 @@
-debootstrap --include=systemd-container --variant=minbase --components=main,universe buster Container2  https://deb.debian.org/debian/
+In ubuntu, systemd-nspawn is not ready to use out of the box and we need to install the necessary components.
 
-apt install wget
+```bash
+apt update
+apt install systemd-containers
+```{{execute}}
