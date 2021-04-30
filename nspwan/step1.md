@@ -2,11 +2,11 @@ In ubuntu, systemd-nspawn is not ready to use out of the box and we need to inst
 
 ```bash
 apt update
-apt install systemd-container
+apt install systemd-container -y
 ```{{execute}}
 
 And we are going to install the debian system environment into the container later, we also need to install the `debootstrap` tool.
 
 ```bash
-apt install debootstrap
+apt install debootstrap -y
 ```{{execute}}

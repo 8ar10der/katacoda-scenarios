@@ -11,7 +11,9 @@ Here we have used debootstrap to obtain the minimum boot environment required fo
 
 Now if you use the `ls`{{execute}} command, you will find that a folder named Container1 is generated. And this folder is accessible. From the host's view, Systemd-nspawn's containers are just folders by folders. This is because Systemd-nspawn is a lightweight namespace virtualization technology. It completely virtualizes the file system hierarchy, process tree, various IPC subsystems, and hosts and domains.
 
-So that means you can also generate the container wherever you wish and then link it to the /var/lib/machines/ folder using a symbolic link, for example:
+So that means you can also generate the container wherever you wish and then link it to the /var/lib/machines/ folder using a symbolic link.
+
+For example:
 
 `sudo ln -s /home/username/MyContainers/Container1/ /var/lib/machines/`
 > Note: Do not use relative paths to create symbolic links, use absolute paths instead.

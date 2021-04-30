@@ -27,6 +27,8 @@ And check is it running:
 
 Then we open a shell to change root's password.
 
+`machinectl shell Container1`{{execute}}
+
 `passwd`{{execute}}
 
 And you have to remove this file for login as root
