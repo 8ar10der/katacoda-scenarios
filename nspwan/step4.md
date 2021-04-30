@@ -8,7 +8,7 @@ machinectl list-images
 # Boot one container
 machinectl start <container>
 # Shutdown one container
-machinectl stop <container>
+machinectl poweroff <container>
 # List running containers
 machinectl list
 # Login into one container
@@ -19,25 +19,26 @@ machinectl shell <container>
 
 1. Firstly, we boot the container.
 
-```bash
-machinectl start Container1
-```{{execute}}
+`machinectl start Container1`{{execute}}
+
+And check is it running:
+
+`machinectl list`{{execute}}
 
 Then we open a shell to change root's password.
 
-```bash
-machinectl shell Container1
-# When you in the shell
-passwd
-# Have to remove this file for login as root
-rm /etc/securetty
-```
+`passwd`{{execute}}
+
+And you have to remove this file for login as root
+
+`rm /etc/securetty`{{execute}}
+
+Finally, exit shell.
+
+`exit`{{execute}}
 
 2. After exiting the container's shell, you can log in to the container with the password
 
-```bash
-sudo machinectl login Container1
-```
+`machinectl login Container1`{{execute}}
 
-> 1. If you forget your password, to terminate the session from inside the container, hold Ctrl and quickly press ] three times. Non-US keyboard users should use % instead of ].  
-> 2. When you terminate the session in this way, don't forget to re-enter the geine.
+> If you forget your password, to terminate the session from inside the container, hold Ctrl and quickly press ] three times. Non-US keyboard users should use % instead of ].

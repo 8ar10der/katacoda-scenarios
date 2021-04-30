@@ -3,7 +3,7 @@ Now we are in the Containers, let's install the Jenkins.
 1. Install necessary packages.
 ```bash
 apt update
-apt install wget nano gnupg
+apt install -y wget nano sl gnupg openjdk-11-jre
 ```{{execute}}
 
 2. Install Jenkins
@@ -20,6 +20,8 @@ apt install jenkins
 
 `systemctl start jenkins`{{execute}}
 
-4. Now you can open Jenkins page in browser at host:
+4. Config your jenkins
 
-Default port 8080: https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com/
+Now you can open Jenkins page in browser at host via port 8080:
+
+https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/

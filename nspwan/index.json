@@ -1,6 +1,6 @@
 {
   "title": "Creat multi Jenkins containers in Linux based on systemd-nspawn",
-  "description": "how to create multiple isolated Jenkins containers in Linux using Systemd-nspwan",
+  "description": "how to create multiple isolated Jenkins containers in Linux using Systemd-nspawn",
   "difficulty": "Intermediate",
   "time": "30 minutes",
   "details": {
@@ -24,6 +24,18 @@
       {
         "title": "0x05 Install Jenkins",
         "text": "step5.md"
+      },
+      {
+        "title": "0x06 Second Container",
+        "text": "step6.md"
+      },
+      {
+        "title": "0x07 Export/Import Containers",
+        "text": "step7.md"
+      },
+      {
+        "title": "0x08 Easter egg/Quizzes",
+        "text": "step8.md"
       }
     ],
     "intro": {
