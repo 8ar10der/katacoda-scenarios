@@ -17,7 +17,7 @@ machinectl login <container>
 machinectl shell <container>
 ```
 
-1. Firstly, we boot the container.
+Firstly, we boot the container.
 
 `machinectl start Container1`{{execute}}
 
@@ -39,7 +39,7 @@ Finally, exit shell.
 
 `exit`{{execute}}
 
-2. After exiting the container's shell, you can log in to the container with the password
+After exiting the container's shell, you can log in to the container with the password
 
 `machinectl login Container1`{{execute}}
 

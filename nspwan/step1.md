@@ -8,5 +8,5 @@ apt install systemd-container -y
 And we are going to install the debian system environment into the container later, we also need to install the `debootstrap` tool.
 
 ```bash
-apt install debootstrap -y
+apt install debootstrap debian-archive-keyring -y
 ```{{execute}}
